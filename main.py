@@ -19,7 +19,8 @@ def parse_url_from_terminal():
     parser.add_argument('url', help="ссылка для сокращения или "
                         "ссылка bit.ly для получения количества переходов по ней"
                         )
-    url = parser.parse_args()
+    args = parser.parse_args()
+    url = args.url
     return url
 
 
@@ -55,7 +56,6 @@ def main():
     load_dotenv()
     BITLY_TOKEN = os.getenv('BITLY_TOKEN')
     headers = {'Authorization': f'Bearer {BITLY_TOKEN}'}
-    print('Введите ссылку: ')
     link = parse_url_from_terminal()
     url_api = URL_API_BITLY.format(route=ROUTE_BITLINK_INFO)
     host_url = drop_url_scheme(link)
