@@ -13,7 +13,8 @@
     pip install -r requirements.txt
     ```
 
-- Рекомндуется использовать [virtualenv/venv|(https://docs.python.org/3/library/venv.html) для изоляции проекта.
+- Рекомндуется использовать [virtualenv/venv](https://docs.python.org/3/library/venv.html) для изоляции проекта.
+
 
 ### Как пользоваться
 
