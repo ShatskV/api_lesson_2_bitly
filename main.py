@@ -54,8 +54,8 @@ def drop_url_scheme(link):
 
 def main():
     load_dotenv()
-    BITLY_TOKEN = os.getenv('BITLY_TOKEN')
-    headers = {'Authorization': f'Bearer {BITLY_TOKEN}'}
+    bitly_token = os.getenv('BITLY_TOKEN')
+    headers = {'Authorization': f'Bearer {bitly_token}'}
     link = parse_url_from_terminal()
     url_api = URL_API_BITLY.format(route=ROUTE_BITLINK_INFO)
     host_url = drop_url_scheme(link)
