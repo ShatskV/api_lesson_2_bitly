@@ -19,11 +19,13 @@
 ### Как пользоваться
 
 - Запустить проект через консоль и указать аргументом ссылку: 
-    ```python3 main.py https://dvmn.org
-       https://bit.ly/3yNcL9f
+     ``` 
+    python3 main.py https://dvmn.org
+    https://bit.ly/3yNcL9f
     ```
-    ```python3 main.py https://bit.ly/3yNcL9f
-       Количество переходов по ссылке битли: 5
+    ```
+    python3 main.py https://bit.ly/3yNcL9f
+    Количество переходов по ссылке битли: 5
     ```
 
 ### Цель проекта
